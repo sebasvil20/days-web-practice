@@ -50,7 +50,6 @@ function animateSlides() {
       reverse: false,
     })
       .setTween(slideTl)
-      .addIndicators()
       .addTo(controller);
     //New animation
 
@@ -66,12 +65,6 @@ function animateSlides() {
       duration: "100%",
       triggerHook: 0,
     })
-      .addIndicators({
-        color: "white",
-        colorStart: "white",
-        name: "page",
-        indent: 200,
-      })
       .setPin(slide, { pushFollowers: false })
       .setTween(pageTl)
       .addTo(controller);
